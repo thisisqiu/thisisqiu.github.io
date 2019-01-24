@@ -1,0 +1,49 @@
+<!--pages/mycar/mycar.wxml-->
+<view class="show">
+  <view class="content">
+    <view class="li" wx:for="{{carList}}" wx:key="index">
+
+      <checkbox checked="{{item.check}}" data-goodid="{{item.goodsid}}"  bindtap="checkOne"></checkbox>
+      <view class='cover'>
+        <image src='{{"https://www.starbucks.com.cn"+item.goodsimg}}'></image>
+      </view>
+      <view class='cont'>
+        <view class="title">
+          {{item.goodstitle}}
+        </view>
+        <view class="pricebox">
+          <text>💰{{item.goodsprice}}</text>
+          <view class="numbox">
+            <text 
+              class="reduce" 
+              data-_id='{{item._id}}'
+              data-num='{{item.num}}'
+              bindtap='reduce'
+            >-</text>
+            <input value="{{item.num}}" type="text" readOnly/>
+            <text 
+              class="add" 
+              data-_id='{{item._id}}'
+              data-num='{{item.num}}'
+              bindtap='add'
+            >+</text>
+          </view>
+        </view>
+      </view>
+
+      <view class="del">
+        <text bindtap='del' data-_id='{{item._id}}'>删除</text>
+      </view>
+    </view>
+
+  </view>
+
+
+  <view class="footer">
+    全选 :  
+    <checkbox class="checkall" checked="{{all}}" bindtap="checkAll" ></checkbox>
+    <text class="total">总价 : 💰{{total}}</text>
+    <text class='order'>下单</text>
+  </view>
+
+</view>

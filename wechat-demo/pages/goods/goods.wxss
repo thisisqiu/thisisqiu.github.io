@@ -1,0 +1,36 @@
+/* pages/goods/goods.wxss */
+.goodsBox{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.navBar{
+  width: 100%;
+  display: flex;
+  height: 86rpx;
+}
+.navBar nav{
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  flex: 1;
+  border-bottom: 6rpx solid #fff;
+}
+.navBar nav.active{
+  color:rgb(156, 129, 93);
+  border-bottom: 6rpx solid rgb(116, 95, 67);
+}
+.conBox{
+  flex:1;
+  width:100%;
+  background: #fff;
+}
+.swiperBox{
+  width: 100%;
+  height: 100%;
+}
+swiper-item{
+  width:100%;
+  height: 100%;
+}

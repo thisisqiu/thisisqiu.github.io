@@ -1,0 +1,36 @@
+<!--pages/goods/goods.wxml-->
+<view class='goodsBox' wx:if="{{show}}">
+  <view class="navBar">
+    <nav
+      wx:for='{{navList}}'
+      wx:key='index'
+      bindtap='changeActiveId'
+      data-index='{{index}}'
+      class="{{activeId==index?'active':''}}" 
+      data-type = "{{item.type}}"
+    >
+    {{item.title}}
+    </nav>
+  </view>
+
+  <view class='conBox'>
+    <swiper
+      class='swiperBox'
+      current='{{current}}'
+      bindchange='swiperChange'
+    >
+      <swiper-item
+        wx:for="{{navList}}"
+        wx:key='index'
+      >
+        <goodscpt 
+          keyword="{{item.title}}"
+          types="{{item.type}}"
+          goods="{{goodsList}}"
+        >
+        </goodscpt> 
+      </swiper-item>      
+    </swiper>
+  </view>
+
+</view>

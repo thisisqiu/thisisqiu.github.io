@@ -1,0 +1,7 @@
+{
+  "backgroundColor": "#666",
+  "navigationBarTitleText": "蛋糕列表",
+  "usingComponents": {
+    "goodscpt": "../../components/goodscpt/goodscpt"
+  }
+}

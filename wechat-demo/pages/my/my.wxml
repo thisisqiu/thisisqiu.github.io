@@ -1,0 +1,28 @@
+<!--pages/my/my.wxml-->
+<view class="userBox">
+  <image class='img'
+      src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1546836637709&di=31f3918250338c707db05a3b05c303dd&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Felement_origin_min_pic%2F17%2F01%2F13%2F558f86e45531f36c107900043a8a970d.jpg" 
+      alt="" 
+      bindTap="goToCake"
+  ></image>
+    <view class='userInfo'>
+      <image src='{{userPic}}' class='userImg'></image>
+      <h2  wx:if="{{show}}">{{nickName}}</h2>
+    </view>
+    <button class='login' wx:if="{{!show}}" bindtap='getUserInfo'>授权登录</button>
+  <view class='show'>
+    <text>优惠券</text>
+    <text>余额</text>
+  </view>
+
+  <view class='actionBox'>
+    <text>
+      一年记丨珍贵时刻
+    </text>
+    <view>
+    【Cake记忆系列活动】收集一些2018年的记忆，用你的镜头去捕捉关于Cake的美好记忆，把珍贵的画面定格在光与影的轮舞中。
+    </view>
+     <button bindtap="photo" class='photoBtn'>拍照/上传图片</button>    
+     <image src="{{imgUrl}}" class='photo' alt='lost'></image>
+  </view>
+</view>

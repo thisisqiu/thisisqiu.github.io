@@ -1,0 +1,26 @@
+<!--components/goodscpt/goodscpt.wxml-->
+<!--components/goodcpt/goodcpt.wxml-->
+<view  class='scroll-box'>
+  <scroll-view
+    class='scroll-item'
+    scroll-y
+    bindscrolltoupper='upper'
+    bindscrolltolower='lower'
+    bindscroll='scroll'
+  >
+    <view>
+      <view wx:for='{{dataList}}'
+        wx:key='index'>
+          <navigator
+            url="{{'../gooddetail/gooddetail?goodId='+ item.id }}"
+          >
+            <view class='title'>
+              <span>{{item.title}}</span>
+              <span>💰{{item.price}}</span>
+            </view>
+            <image src='{{"https://www.starbucks.com.cn"+item.preview}}'></image>
+          </navigator>
+      </view>
+    </view>
+  </scroll-view>
+</view>

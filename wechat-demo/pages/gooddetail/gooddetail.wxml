@@ -1,0 +1,23 @@
+<!--pages/gooddetail/gooddetail.wxml-->
+<view>
+  <view class='goodBox'>
+
+    <image class='img' src='{{"https://www.starbucks.com.cn"+good.preview}}'></image>
+    <view class='actionBox'>
+      <text>{{good.title}}</text>
+      <text>💰{{good.price}}</text>
+      <button bindtap="desc">-</button>
+      <input class="inp" type="number" value="{{count}}" bindinput="setCount" />
+      <button bindtap="add">+</button>
+      <view>{{good.body}}</view>
+    </view>
+    <image 
+      class='tip'
+      src='https://www.starbucks.com.cn/assets/images/featured/2019cny1/reserve-bean.jpg'>
+    </image>
+  </view>
+  <view class='foot'>
+    <span bindtap='goToCar'>🛒({{carCount}})</span>
+    <span bindtap='addCar'>加入购物车</span>
+  </view>
+</view>

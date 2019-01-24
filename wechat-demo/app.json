@@ -1,0 +1,51 @@
+{
+  "pages": [
+ 
+    "pages/home/home",
+    "pages/index/index",
+    "pages/my/my",
+    "pages/goods/goods",
+    "pages/logs/logs",
+    "pages/mycar/mycar",
+    "pages/gooddetail/gooddetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "backgroundColor": "#ccc",
+    "navigationBarBackgroundColor": "#7d5440",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "color": "#bcbcbc",
+    "selectedColor": "#3b1f1c",
+    "backgroundColor": "#fff",
+    "borderStyle": "#41262d",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "icon/home-off.png",
+        "selectedIconPath": "icon/home-on.png"
+      },
+      {
+        "pagePath": "pages/goods/goods",
+        "text": "商品",
+        "iconPath": "icon/icon-test_1-off.png",
+        "selectedIconPath": "icon/icon-test_1-on.png"
+      },
+      {
+        "pagePath": "pages/mycar/mycar",
+        "text": "购物车",
+        "iconPath": "icon/gouwuche-off.png",
+        "selectedIconPath": "icon/gouwuche-on.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "icon/wode-off.png",
+        "selectedIconPath": "icon/wode-on.png"
+      }
+    ]
+  }
+}
