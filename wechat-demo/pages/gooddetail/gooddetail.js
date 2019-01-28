@@ -49,6 +49,9 @@ Page({
           num:this.data.count
         },
         success:(res)=>{
+          this.setData({
+            carCount:this.data.carCount + this.data.count
+          })
           wx.showToast({
             title: '加入购物车成功',
           })
@@ -112,7 +115,7 @@ Page({
       }
     })
 
-    if(wx.getStorageSync('username')){
+    if(wx.getStorageSync('loginFlag')){
       wx.request({
         url: 'http://47.93.229.143:3600/wechat/getCount',
         method:'post',
@@ -122,7 +125,7 @@ Page({
         success:(res)=>{
           console.log(res);
           this.setData({
-            carCount:res.count
+            carCount:res.data.count
           })
         }
       })

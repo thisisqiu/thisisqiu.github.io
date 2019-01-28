@@ -181,7 +181,7 @@ Page({
         url: 'http://47.93.229.143:3600/wechat/getMyCarInfo',
         method:'post',
         data:{
-          username:'zuozuomu'
+          username:wx.getStorageSync('username')
         },
         success:(res)=>{
           this.setData({
