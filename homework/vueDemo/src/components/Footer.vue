@@ -1,6 +1,7 @@
 <template>
 
     <div id='footBox'>
+        <p>{{url}}</p>
         <v-bottom-nav
             :active.sync="activeBtn"
             :value="showNav"
@@ -53,23 +54,39 @@
 </template>
 <script>
 export default {
-  data() {
-    return {
-      activeBtn: 0,
-      showNav: true
-    };
-  }
+    data() {
+        return {
+            activeBtn: 0,
+            showNav: true
+        };
+    },
+
+    props:[
+        'url'
+    ],
+
+    watch:{
+        activeBtn:function(val){
+            console.log(val)
+        }
+    }
+
+
 };
 </script>
 <style lang="scss" scoped>
     a {
-    text-decoration: none;
+        text-decoration: none;
     }
-    // #footBox{
-    //     position: fixed;
-    //     bottom: 0;
-    //     left:0;
-    // }
+    #footBox{
+        height: 56px;
+        width: 100%;
+        z-index:99;
+        position: fixed;
+        bottom:0;
+        left:0;
+        background-color: #fff;
+    }
 </style>
 
 

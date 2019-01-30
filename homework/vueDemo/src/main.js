@@ -5,6 +5,8 @@ import router from "./router";
 import store from "./store";
 import './plugins/element.js'
 
+
+// 启动的主入口文件 
 Vue.config.productionTip = false;
 
 new Vue({
