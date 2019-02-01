@@ -29,6 +29,7 @@ export default {
 <style lang="scss" scoped>
     #carousel{
         width: 100%;
+        margin-top: 3.6rem;
     }
 </style>
 

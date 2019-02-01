@@ -7,7 +7,8 @@ import axios from 'axios';
 axios.defaults.baseURL = 'http://47.93.229.143:3600/wechat/'
 export default new Vuex.Store({
   state: {
-    goodsList:[]
+    goodsList:[],
+    goodsdetail:[],
   },
   getters:{
 
@@ -15,6 +16,9 @@ export default new Vuex.Store({
   mutations: {
     getGoods(state,data){
       state.goodsList = data
+    },
+    getGoodsdetail(state,data){
+      state.goodsdetail = data
     }
   },
   actions: {
@@ -22,6 +26,13 @@ export default new Vuex.Store({
       axios.get(url).then(res=>{
         cb();
         commit('getGoods',res.data)
+      })
+    },
+    getGoodsdetail({commit},{url,id,cb}){
+      axios.get(url,{params:{id}}).then(res=>{
+        // console.log(res.data)
+        cb(res.data)
+        commit('getGoodsdetail',res.data)
       })
     }
   }

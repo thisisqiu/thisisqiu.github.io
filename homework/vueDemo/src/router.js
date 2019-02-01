@@ -5,7 +5,9 @@ import Home from "./views/Home.vue";
 import Goods from './views/Goods.vue';
 import Car from "./views/Car.vue";
 import My from "./views/My.vue";
+import Goodsdetail from "./views/Goodsdetail";
 import Login from './views/Login';
+import Search from "./views/Search";
 
 
 Vue.use(Router);
@@ -21,7 +23,9 @@ export default new Router({
         {path:"goods",component:Goods,name:"goods"},
         {path:"car",component:Car,name:"car"},
         {path:"my",component:My,name:"my"},
+        {path:'goodsdetail',component:Goodsdetail,name:'goodsdetail'},
         {path:'login',component:Login,name:'login'},
+        {path:'search',component:Search,name:'search'},
         {path:"*",redirect:{name:"home"}},
       ]
     },

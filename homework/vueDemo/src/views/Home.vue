@@ -41,10 +41,10 @@
       return{
         url:location.href,
         list:[
-          {txt:"浓醇三重黑巧克力蛋糕",name:"/goodsdetail",src:"https://www.starbucks.com.cn/images/products/triple-dark-chocolate-cake.jpg"},
-          {txt:"蜂蜜提子司康",name:"/goodsdetail",src:"https://www.starbucks.com.cn/images/products/honey-raisin-scone.jpg"},
-          {txt:"法式焦糖酥",name:"/goodsdetail",src:"https://www.starbucks.com.cn/images/products/french-caramel-bread.jpg"},
-          {txt:"浓郁重芝士蛋糕",name:"/goodsdetail",src:"https://www.starbucks.com.cn/images/products/new-york-style-creamy-cheesecake.jpg"},
+          {txt:"浓醇三重黑巧克力蛋糕",name:"goodsdetail",src:"https://www.starbucks.com.cn/images/products/triple-dark-chocolate-cake.jpg"},
+          {txt:"蜂蜜提子司康",name:"goodsdetail",src:"https://www.starbucks.com.cn/images/products/honey-raisin-scone.jpg"},
+          {txt:"法式焦糖酥",name:"goodsdetail",src:"https://www.starbucks.com.cn/images/products/french-caramel-bread.jpg"},
+          {txt:"浓郁重芝士蛋糕",name:"goodsdetail",src:"https://www.starbucks.com.cn/images/products/new-york-style-creamy-cheesecake.jpg"},
         ]
       }
     },

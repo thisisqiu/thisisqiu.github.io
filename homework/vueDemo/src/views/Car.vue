@@ -1,6 +1,6 @@
 <template>
   <div id='carBox'>
-    <Head title='购物车' :show1='true' :show2='true'></Head>
+    <Head title='购物车' :show1='false' :show2='true'></Head>
     car-car
   </div>
 </template>

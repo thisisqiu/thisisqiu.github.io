@@ -23,8 +23,8 @@
                     color="#7d5440"
                     flat
                 >
-                    <span>咖啡</span>
-                    <v-icon medium>local_cafe</v-icon>
+                    <span>蛋糕</span>
+                    <v-icon medium>cake</v-icon>
                 </v-btn>
             </router-link>
 
